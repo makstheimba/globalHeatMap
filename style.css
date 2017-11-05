@@ -28,3 +28,7 @@ body {
 .chart {
   max-height: 100%;
 }
+
+.chart rect {
+  fill: lightblue;
+}
