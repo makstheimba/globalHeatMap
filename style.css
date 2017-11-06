@@ -3,8 +3,9 @@ body, html {
 }
 body {
   box-sizing: border-box;
-  margin: 0 10%;
-  padding: 20px 0;
+  padding: 20px;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;  
 }
 
 .svg-container {
@@ -23,6 +24,41 @@ body {
       rgb(236,236,251) 5%,
       rgb(180,180,180)
   );
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  height: 50px;
+  width: 130px;
+  background: rgba(48, 54, 56, 0.5);
+  overflow: hidden;
+  visibility: visible;
+  box-shadow: 1px 1px 2px 2px black;
+  transform: translate(-90%, -85%);
+  transition: .5s opacity, .5s height ease-out;
+}
+
+.tooltip-hidden {
+  opacity: 0;
+  height: 0;
+}
+
+.tick text {
+  font-size: 14px;
+}
+
+.yAxis line, .yAxis path {
+  stroke: none;
+}
+
+.title {
+  font-size: 26px;
+  text-anchor: end;
 }
 
 .chart {
